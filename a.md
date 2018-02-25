@@ -13,6 +13,16 @@ gcc -v
 
 ### 基础
 
+##### hello world
+```c
+# include <stdio.h>
+int main()
+{
+    printf("%s\n","hello world");
+    return 0;
+}
+```
+
 ### 指针
 
 ### 预编译指令
