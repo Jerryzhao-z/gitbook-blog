@@ -22,6 +22,13 @@ int main()
     printf("%s\n","hello world"); // 打印
     return 0;
 }
+
+/*
+块状注释
+*/
+
+// 行注释
+
 ```
 
 将改代码存入hello\_world.c之后使用以下命令编译和运行改代码。
@@ -37,5 +44,6 @@ gcc hello_world.c -o hello #把hello_world.c文件编译后输出为hello程序
 
 ### 预编译指令
 
+### 标准库
 
 
