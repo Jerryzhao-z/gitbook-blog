@@ -27,7 +27,7 @@ int main()
 将改代码存入hello\_world.c之后使用以下命令编译和运行改代码。
 
 ```bash
-gcc hello_world.c -o hello //把hello_world.c文件编译后输出为hello程序
+gcc hello_world.c -o hello #把hello_world.c文件编译后输出为hello程序
 ./hello #打印hello world
 ```
 
