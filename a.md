@@ -14,6 +14,7 @@ gcc -v
 ### 基础
 
 ##### hello world
+
 ```c
 # include <stdio.h> //预编译指令
 int main()
@@ -22,7 +23,13 @@ int main()
     return 0;
 }
 ```
-将改代码存入hello_world.c之后使用以下命令编译和运行改代码。
+
+将改代码存入hello\_world.c之后使用以下命令编译和运行改代码。
+
+```
+gcc hello_world.c -o hello //把hello_world.c文件编译后输出为hello程序
+./hello #打印hello world
+```
 
 ### 指针
 
