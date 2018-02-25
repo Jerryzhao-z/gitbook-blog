@@ -31,6 +31,8 @@ gcc hello_world.c -o hello #把hello_world.c文件编译后输出为hello程序
 ./hello #打印hello world
 ```
 
+##### 
+
 ### 指针
 
 ### 预编译指令
