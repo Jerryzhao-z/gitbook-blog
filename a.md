@@ -28,7 +28,6 @@ int main() // 变量名/函数名只能以大小写字母或下划线开头，�
 */
 
 // 行注释
-
 ```
 
 将改代码存入hello\_world.c之后使用以下命令编译和运行改代码。
@@ -40,12 +39,23 @@ gcc hello_world.c -o hello #把hello_world.c文件编译后输出为hello程序
 
 ##### 保留字
 
-
+| auto | else | long | switch |
+| :--- | :--- | :--- | :--- |
+| break | enum | register | typedef |
+| case | extern | return | union |
+| char | float | short | unsigned |
+| const | for | signed | void |
+| continue | goto | sizeof | volatile |
+| default | if | static | while |
+| do | int | struct | \_Packed |
+| double |  |  |  |
+|  |  |  |  |
 
 ### 指针
 
 ### 预编译指令
 
 ### 标准库
+
 
 
