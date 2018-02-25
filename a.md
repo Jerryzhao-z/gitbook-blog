@@ -20,7 +20,7 @@ gcc -v
 int main()
 {
     printf("%s\n","hello world"); // 打印
-    return 0;
+    return 0; // 每行语句以分号为结束符
 }
 
 /*
