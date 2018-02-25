@@ -15,10 +15,10 @@ gcc -v
 
 ##### hello world
 ```c
-# include <stdio.h>
+# include <stdio.h> //预编译指令
 int main()
 {
-    printf("%s\n","hello world");
+    printf("%s\n","hello world"); // 打印
     return 0;
 }
 ```
