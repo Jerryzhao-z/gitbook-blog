@@ -1,3 +1,4 @@
-# My Awesome Book
+# 博客
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+尝试使用Gitbook作为博客记录个人的一些想法。
+
