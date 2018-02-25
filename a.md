@@ -51,7 +51,14 @@ gcc hello_world.c -o hello #把hello_world.c文件编译后输出为hello程序
 | double |  |  |  |
 |  |  |  |  |
 
+##### 基本类型
+
+
+##### 复合类型
+
 ### 指针
+
+
 
 ### 预编译指令
 
