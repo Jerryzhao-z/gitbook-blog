@@ -17,7 +17,7 @@ gcc -v
 
 ```c
 # include <stdio.h> //预编译指令
-int main()
+int main() // 变量名/函数名只能以大小写字母或下划线开头，由数字/字母/下划线构成
 {
     printf("%s\n","hello world"); // 打印
     return 0; // 每行语句以分号为结束符
