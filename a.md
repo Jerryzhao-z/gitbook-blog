@@ -68,7 +68,7 @@ gcc hello_world.c -o hello #把hello_world.c文件编译后输出为hello程序
 ![](http://www.runoob.com/wp-content/uploads/2014/09/32-64.jpg)
 
 实际在工程中，我们常常会用到类似uint32，uint64命名的类。这些强调位数的类型，是方便统一代码在32位，64位cpu下运行的逻辑，一般是在某个头文件中定义。
-另外void代表没有可用的值
+另外void代表没有可用的值，即空
 
 ##### 枚举类型
 
