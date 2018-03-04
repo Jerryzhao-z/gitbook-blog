@@ -115,11 +115,10 @@ type* b = &a //重新获取指针
 // 在没有确切地址时，应该为其赋值为NULL
 
 // 一个返回值为指针的函数
-void* func(void){};
+void* func(void);
 
-//函数指针
-
-
+//定义一个函数指针
+void (*func)(int, int)
 ```
 
 ### 预编译指令
