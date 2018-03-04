@@ -78,7 +78,18 @@ void* malloc(size_t size) //表示一个可以转为任意类型的指针
 
 ##### 枚举类型
 
-
+```c
+enum week 
+{
+    Mon,
+    Tues,
+    Wed,
+    Thurs,
+    Fri,
+    Sat,
+    Sun
+};
+```
 
 ##### 复合类型
 
