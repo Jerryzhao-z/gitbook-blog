@@ -174,13 +174,15 @@ int main(void)
 int main(void)
 {
    int token34 = 40;
-   
+
    tokenpaster(34);
    return 0;
 }
 ```
 
 ### 标准库
+
+C语言的标准库比较简单，仅仅提供了一些基本类型，IO和数学计算的支持
 
 
 
