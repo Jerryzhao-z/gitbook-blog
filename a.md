@@ -124,20 +124,20 @@ void (*func)(int, int)
 
 #include <stdlib.h>  
 #include <stdio.h>
- 
+
 // 回调函数
 void populate_array(int *array, size_t arraySize, int (*getNextValue)(void))
 {
     for (size_t i=0; i<arraySize; i++)
         array[i] = getNextValue();
 }
- 
+
 // 获取随机值
 int getNextRandomValue(void)
 {
     return rand();
 }
- 
+
 int main(void)
 {
     int myarray[10];
@@ -151,6 +151,34 @@ int main(void)
 ```
 
 ### 预编译指令
+
+预编译指令比较有意思的是\#和\#\#的使用
+
+```c
+#include <stdio.h>
+
+#define  message_for(a, b)  \
+    printf(#a " and " #b ": We love you!\n") //变量名级组合
+
+int main(void)
+{
+   message_for(Carole, Debra);
+   return 0;
+}
+//输出结果是Carole and Debra: We love you!
+
+
+
+#define tokenpaster(n) printf ("token" #n " = %d", token##n) // token级组合
+
+int main(void)
+{
+   int token34 = 40;
+   
+   tokenpaster(34);
+   return 0;
+}
+```
 
 ### 标准库
 
