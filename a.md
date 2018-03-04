@@ -107,7 +107,10 @@ union name
 ### 指针
 
 ```c
-type* var_name //定义一个变量指针
+type* var_name //定义一个变量指针（地址）
+
+type a = *var_name //获取指针指向的值
+type* b = &a //重新获取指针
 ```
 
 ### 预编译指令
