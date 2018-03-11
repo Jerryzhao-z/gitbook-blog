@@ -30,7 +30,7 @@ docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
 进入操作一个container
 
 ```bash
-docker attach 
+docker attach [OPTIONS] CONTAINER
 
 docker exec -it 
 ```
