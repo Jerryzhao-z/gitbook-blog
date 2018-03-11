@@ -27,7 +27,7 @@ docker image rm [选项] <镜像1> [<镜像2> ...] # 删除镜像
 docker run -it <image_name> /bin/bash  # -i 交互时操作 -t 终端模式
 ```
 
-连接操作一个container
+进入操作一个container
 
 ```bash
 docker attach 
