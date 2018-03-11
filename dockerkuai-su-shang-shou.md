@@ -2,7 +2,7 @@
 
 ## 基本概念
 
-#### 镜像 images
+#### 镜像 image
 
 #### 容器 container
 
