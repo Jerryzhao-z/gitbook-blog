@@ -32,5 +32,5 @@ docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
 ```bash
 docker attach [OPTIONS] CONTAINER
 
-docker exec -it 
+docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
 ```
