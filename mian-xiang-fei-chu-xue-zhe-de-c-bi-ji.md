@@ -9,7 +9,7 @@
 
 另外需要提的是浮点型的有效数字，float由一个字来表示，而double有两个字来表示，这个字长单位即CPU的浮点长度。
 
-至于signed和unsigned可以修饰整型
+至于signed和unsigned可以修饰整型，一般signed修饰符可有可无，有一个特例是char，char与signed char的含义并不完全相同，由编译器来决定char与signed char还是unsigned char保持一致。
 
 ### 面向对象
 
