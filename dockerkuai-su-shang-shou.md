@@ -30,7 +30,7 @@ docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
 进入操作一个container
 
 ```bash
-docker attach [OPTIONS] CONTAINER
+docker attach [OPTIONS] CONTAINER #因为attach使容器与local standard input, output, and error streams连接，所以我们不能使用Ctrl+C发送信号退出，而需要使用CTRL-p CTRL-q退出容器，并保留容器在后台
 
 docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
 ```
