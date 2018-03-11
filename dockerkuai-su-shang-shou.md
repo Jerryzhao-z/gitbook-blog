@@ -22,7 +22,7 @@ docker pull [选项] [Docker Registry 地址[:端口号]/]仓库名[:标签]
 获得镜像后我们可以基于镜像生成一个容器
 
 ```bash
-
+docker run -it <image_name> /bin/bash# -i 交互时操作 -t 终端模式
 ```
 
 ##### 操作容器
