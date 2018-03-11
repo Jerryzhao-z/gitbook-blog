@@ -17,6 +17,8 @@ Docker可以视为虚拟化容器，即一种微型虚拟机。
 docker pull [选项] [Docker Registry 地址[:端口号]/]仓库名[:标签]
 
 docker images # 列出镜像
+docker images -a 
+docker image rm [选项] <镜像1> [<镜像2> ...] # 删除镜像
 ```
 
 获得镜像后我们可以基于镜像生成一个容器
