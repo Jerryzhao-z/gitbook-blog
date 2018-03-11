@@ -11,12 +11,12 @@ Docker可以视为虚拟化容器，即一种微型虚拟机。
 仓库就是一个存放docker镜像的远程服务器，可以用于拉取一些云端的镜像。
 ## 基本操作
 
-##### 操作镜像
-
 从仓库获得镜像
 
 ```bash
 docker pull [选项] [Docker Registry 地址[:端口号]/]仓库名[:标签]
+
+docker images # 列出镜像
 ```
 
 获得镜像后我们可以基于镜像生成一个容器
@@ -25,4 +25,8 @@ docker pull [选项] [Docker Registry 地址[:端口号]/]仓库名[:标签]
 docker run -it <image_name> /bin/bash  # -i 交互时操作 -t 终端模式
 ```
 
-##### 操作容器
+连接操作一个container
+
+```bash
+docker attach 
+```
