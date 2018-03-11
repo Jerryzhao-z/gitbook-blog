@@ -24,7 +24,7 @@ docker image rm [选项] <镜像1> [<镜像2> ...] # 删除镜像
 获得镜像后我们可以基于镜像生成一个容器
 
 ```bash
-docker run <image_name> /bin/bash  # -i 交互时操作 -t 终端模式
+docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
 ```
 
 进入操作一个container
