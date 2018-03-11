@@ -11,6 +11,8 @@
 
 至于signed和unsigned可以修饰整型，一般signed修饰符可有可无，有一个特例是char，char与signed char的含义并不完全相同，由编译器来决定char与signed char还是unsigned char保持一致。
 
+另外需要注意的是：unsigned和signed的符号不要混用做操作。
+
 ### 面向对象
 
 ### STL
