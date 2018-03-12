@@ -63,6 +63,10 @@ char *pc = reinterpret_cast<char *> ip;
 
 string str(pc) //报错，pc实际上是int*，只是被视为char *。
 
+// dynamic_cast<type*>(e)
+// dynamic_cast<type&>(e)
+// dynmaic_cast<type&&>(e)
+
 ```
 ### 面向对象
 
