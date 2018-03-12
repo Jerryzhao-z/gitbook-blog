@@ -85,7 +85,7 @@ string str(pc) //报错，pc实际上是int*，只是被视为char *。
 
 ### 参考
 
-http://www.cnblogs.com/miloyip/archive/2010/09/17/behind_cplusplus.html
+C++强大背后：http://www.cnblogs.com/miloyip/archive/2010/09/17/behind_cplusplus.html
 
 
 
