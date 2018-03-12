@@ -47,6 +47,12 @@ double f(int a)
 ```
 
 显式转换
+
+```c++
+// cast-name<type>(expression)
+
+double a = static_cast<double>(j)
+```
 ### 面向对象
 
 ### STL
