@@ -32,7 +32,17 @@ int a = 1 + b;
 while (1) {}
 
 // 初始化中，初始值转换为变量的类型；赋值语句中，右侧运算对象转为左侧
-double a = 1
+double a = 1;
+Person a = Student() // if Student herite Person class？存疑
+
+// 运算时需要转换为同一种类型
+int a = 3.12+ 3
+
+// 函数调用时的类型转换
+double f(int a)
+{
+    return a;
+}
 
 ```
 
