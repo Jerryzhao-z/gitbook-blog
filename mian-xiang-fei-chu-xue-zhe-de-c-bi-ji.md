@@ -64,7 +64,7 @@ char *pc = reinterpret_cast<char *> ip;
 string str(pc) //报错，pc实际上是int*，只是被视为char *。
 
 // dynamic_cast<type*>(e) e必须是一个有效的指针，即指向对象或者对象相邻位置或空指针
-// dynamic_cast<type&>(e) e必须是一个左值
+// dynamic_cast<type&>(e) e必须是一个左值，所谓左值，就是一个可以获取地址的变量 int b = 2中b为左值，2为右值
 // dynmaic_cast<type&&>(e) e不能是左值
 
 
