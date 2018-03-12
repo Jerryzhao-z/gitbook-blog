@@ -52,6 +52,9 @@ double f(int a)
 // cast-name<type>(expression)
 
 double a = static_cast<double>(j)
+
+const char *pc;
+char *p = const_cast<char*>(pc); // 把常量对象转换成非常量 
 ```
 ### 面向对象
 
