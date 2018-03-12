@@ -56,7 +56,13 @@ double a = static_cast<double>(j)
 const char *pc;
 char *p = const_cast<char*>(pc); // 把常量对象转换成非常量
 
-//reinterpret_cast 是一种比较 
+//reinterpret_cast 是一种比较另类的转换 不同于 static_cast ，但类似 const_cast ， reinterpret_cast 表达式不编译成任何 CPU 指令。它纯粹地是指示编译器以如同它有 new_type 类型一般，对待 expression 的位序列（对象表示）的编译器指令。
+
+int *ip;
+char *pc = reinterpret_cast<char *> ip;
+
+string str(pc) //报错，pc实际上是int*，只是被视为char *。
+
 ```
 ### 面向对象
 
