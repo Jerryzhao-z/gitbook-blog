@@ -63,9 +63,11 @@ char *pc = reinterpret_cast<char *> ip;
 
 string str(pc) //报错，pc实际上是int*，只是被视为char *。
 
-// dynamic_cast<type*>(e)
+// dynamic_cast<type*>(e) e必须是一个有效的指针，即指向对象或者对象相邻位置或空指针
 // dynamic_cast<type&>(e)
 // dynmaic_cast<type&&>(e)
+
+
 
 ```
 ### 面向对象
