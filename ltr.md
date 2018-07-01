@@ -12,6 +12,7 @@ LTR就是用在打分排序这一部分的算法。由此我们可以这样表�
 
 ##给排序结果打分 
 是骡子是马拉出来溜溜，对LTR算法的打分即对其排序结果的打分。
+
 -    MAP, mean average precision
 -    DCG/NDCG, 
 -    topN precision
@@ -20,5 +21,7 @@ LTR就是用在打分排序这一部分的算法。由此我们可以这样表�
 -    Kendall's tau
 -    Spearman's Rho
 -    ERR, Expected reciprocal rank
+
+MAP，topN precision，MRR用于binary定义的数据（即标签为相关/不相关）。
 
 ## 
