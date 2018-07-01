@@ -42,7 +42,7 @@ Pairwise approach 则把排序问题转化为分类：对于一个用户query和
 Listwise approach 则试图直接优化评价测度，这里的难点是对排序结果进行评价的测度都是非连续的函数，很难直接带入损失函数进行优化。
 
 | year | name | type |
-
+| 1989 | OPRF | pointwise |
 
 
 
