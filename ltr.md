@@ -82,5 +82,9 @@ Listwise approach 则试图直接优化评价测度，这里的难点是对排�
 | 2010 | CRP | pointwise&pairwise  |
 | 2017 | ES-Rank | listwise |
 
-
-
+#### 细数 pointwise算法
+最初的pointwise是OPRF，使用多项式回归拟合(query, doc)打分。
+SLR则使用Staged logistic regression.
+Pranking对应Ordinal regression
+McRank
+CRP
