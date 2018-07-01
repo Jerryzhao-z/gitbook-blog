@@ -17,7 +17,7 @@ LTR就是用在打分排序这一部分的算法。由此我们可以这样表�
 -    topN precision
 -    topN NDCG
 -    mean reciprocal rank
--    kendall's tau
+-    Kendall's tau
 -    Spearman's Rho
 
 ## 
