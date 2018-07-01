@@ -37,4 +37,6 @@ LTR系列算法中可以分为三种类型：
 
 Pointwise approach 假设每个query和doc都可以算出一个打分，而这个打分可以使用regression problem解决，即给出一个(query, doc)对, 预测其分数。
 
-Pairwise approach 则把排序问题转化为分类：对于一个用户query，(doc1, doc2)谁的排序更高。
+Pairwise approach 则把排序问题转化为分类：对于一个用户query和 doc1， doc2，正确的排序是 (doc1, doc2)还是(doc2, doc1)
+
+Listwise approach 则试图直接优化以上列举的一个评价测度，这里的难点是对排序结果进行评价的测度都是非连续的函数，很难直接带入损失函数进行优化。
