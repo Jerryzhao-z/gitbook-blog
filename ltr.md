@@ -25,4 +25,8 @@ LTR就是用在打分排序这一部分的算法。由此我们可以这样表�
 MAP，topN precision，MRR用于binary定义的数据（即标签为相关/不相关）。
 而非binary的数据（即以level划分相关度）常常使用NDCG和ERR作为评测标准。
 
+#### NDCG
+
+#### ERR
+
 ## 
