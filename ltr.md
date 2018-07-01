@@ -86,5 +86,7 @@ Listwise approach 则试图直接优化评价测度，这里的难点是对排�
 最初的pointwise是OPRF，使用多项式回归拟合(query, doc)打分。
 SLR则使用Staged logistic regression.
 Pranking对应Ordinal regression
-McRank
-CRP
+
+McRank将排序问题转为多分类预测
+
+#### 常用的pairwise和listwise算法
