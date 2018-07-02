@@ -87,6 +87,6 @@ Listwise approach 则试图直接优化评价测度，这里的难点是对排�
 SLR则使用Staged logistic regression.
 Pranking对应Ordinal regression
 
-McRank将排序问题转为多分类预测。
+McRank将排序问题转为多分类预测相关度level。
 
 #### 常用的pairwise和listwise算法
