@@ -2,19 +2,20 @@
 
 LTR，即一类使用机器学习排序的算法。在搜索，问答，信息抽取，推荐系统中有应用。  
 我们可以以搜索为框架思考一下LTR的一些算法。  
-在搜索框架中，一个用户问题userQuery会首先通过分词/关键词抽取/实体抽取等一系列NLP操作，之后借助找到的相关词在索引中寻找可能相关的材料（网页/文本）保证召回率，之后再通过打分排序保证TOPx搜索结果的准确率。  
+在搜索框架中，一个用户问题userQuery会首先通过分词/关键词抽取/实体抽取等一系列NLP操作，之后借助找到的相关词在索引中寻找可能相关的材料（网页/文本）保证召回率，之后再通过打分排序保证TOPx搜索结果的准确率。
 
 传统的排序模型主要是使用网页权威度/词频等特征进行打分。主要分为两大类模型：
--    RRM, Relevance Ranking Model
-    -    Boolean Model
-    -    Vector Space Model
-    -    LSA
-    -    BM25
--    IRM, Importance Ranking Model
-    -    PageRank
-    -    HITS
-    -    HillTop
-    -    TrustRank
+
+* RRM, Relevance Ranking Model
+  * Boolean Model
+  * Vector Space Model
+  * LSA
+  * BM25
+* IRM, Importance Ranking Model
+  * PageRank
+  * HITS
+  * HillTop
+  * TrustRank
 
 LTR就是用在打分排序这一部分的算法。由此我们可以这样表述LTR的目标。
 
@@ -42,7 +43,18 @@ MAP，topN precision，MRR用于binary定义的数据（即标签为相关/不�
 
 #### NDCG
 
+
+
 #### ERR
+
+
+
+## 数据
+
+特征数据包含以下几种：
+-  query feature
+-  document feature
+-  query-doc feature
 
 ## 算法
 
@@ -92,14 +104,18 @@ Listwise approach 则试图直接优化评价测度，这里的难点是对排�
 | 2010 | NDCG Boost | listwise |
 | 2010 | GBlend | pairwise |
 | 2010 | IntervalRank | pairwise&listwise |
-| 2010 | CRP | pointwise&pairwise  |
+| 2010 | CRP | pointwise&pairwise |
 | 2017 | ES-Rank | listwise |
 
 #### 细数 pointwise算法
-最初的pointwise是OPRF，使用多项式回归拟合(query, doc)打分。
-SLR则使用Staged logistic regression.
+
+最初的pointwise是OPRF，使用多项式回归拟合\(query, doc\)打分。  
+SLR则使用Staged logistic regression.  
 Pranking对应Ordinal regression
 
 McRank将排序问题转为多分类预测相关度level。
 
 #### 常用的pairwise和listwise算法
+
+
+
