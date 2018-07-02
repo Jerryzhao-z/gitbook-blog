@@ -55,7 +55,7 @@ MAP，topN precision，MRR用于binary定义的数据（即标签为相关/不�
 -  query feature
 -  document feature
 -  query-doc feature
--  list statitics feature
+-  statitics features based on previous features
 
 ## 算法
 
