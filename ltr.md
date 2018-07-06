@@ -147,6 +147,8 @@ $$S_{ij}=1$$时，$${\lambda}_{ij} = -1/(1+exp(s_i-s_j))$$,
 
 对于一系列这样的(Doc(i), Doc(j))对给定query的相关度对比数据,我们可以整合$$\lambda_{ij}$$为$$\lambda_i=\sum_{j:(i,j)}\lambda_{ij}+\sum_{j:(j,i)}\lambda_{ji}=\sum_{j:(i,j)}\lambda_{ij}-\sum_{j:(j,i)}\lambda_{ij}$$
 
+这里 $$(i,j)$$表示标注数据为i比j文档更相关。
+
 ##### Mart
 
 ##### LambdaMart
