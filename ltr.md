@@ -152,6 +152,8 @@ $$S_{ij}=1$$时，$${\lambda}_{ij} = -1/(1+exp(s_i-s_j))$$,
 ![](/assets/costGradient.png)
 
 $$\lambda_i$$ 如我们所见是一个负数，决定了doc(i)在迭代中的移动方向和幅度。如果完美排序后，排在doc(i)之前的doc越少，之后的越多，那么文档doc(i)向前移动的幅度越大，$$|\lambda|$$越大
+
+由此，对模型更新不再是优化cost function，而是通过迭代$$\lambda_i$$和NN,最终使用某一评测标准做早停。
 ##### Mart
 
 ##### LambdaMart
