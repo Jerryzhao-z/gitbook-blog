@@ -141,10 +141,11 @@ LambdaRank的发展源于对RankNet的Loss function的分析。设$$S_{ij}=[0,1,
 
 这样的一个定义，我们假设参数$$\sigma=1$$, 
 $$S_{ij}=-1$$时，$${\lambda}_{ij} = 1- 1/(1+exp(s_i-s_j))$$, 
-$$S_{ij}=1$$时，$${\lambda}_{ij} = 1/(1+exp(s_i-s_j))$$,
+$$S_{ij}=1$$时，$${\lambda}_{ij} = -1/(1+exp(s_i-s_j))$$,
 ![](/assets/lambdaij.png)
+横轴是$$s_i-s_j$$
 
-
+对于一系列这样的(Doc(i), Doc(j))对给定query的相关度对比数据,我们可以整合$$\lambda_{ij}$$为$$\lambda_i=\sum_{j:(i,j)}\lambda_{ij}+\sum_{j:(j,i)}\lambda_{ji}=\sum_{j:(i,j)}\lambda_{ij}-\sum_{j:(j,i)}\lambda_{ij}$$
 
 ##### Mart
 
