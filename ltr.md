@@ -119,7 +119,7 @@ McRank将排序问题转为多分类预测相关度level。
 
 ##### RankNet
 RankNet是个存粹的Pairwise算法，RankNet这个名字，源于使用NeuralNet打分S。
-RankNet 输入 一对（query, doc）,使用NN打分，之后做softmax归一化
+RankNet 输入 一对（query, doc）,使用NN打分，之后做softmax归一化获得这一对（query, doc）某一doc排名比另一个排名靠前的概率，最后结合标注结果使用CrossEntropy计算Loss
 
 
 
