@@ -9,4 +9,5 @@
 * [一些常用的Linux命令](yi-xie-chang-yong-de-linux-ming-ling.md)
 * [MySQL手记](mysqlshou-ji.md)
 * [LTR](ltr.md)
+* [Knowledge Graph](knowledge-graph.md)
 

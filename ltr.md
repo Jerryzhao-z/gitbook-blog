@@ -43,19 +43,16 @@ MAP，topN precision，MRR用于binary定义的数据（即标签为相关/不�
 
 #### NDCG
 
-
-
 #### ERR
-
-
 
 ## 数据
 
 特征数据包含以下几种：
--  query feature
--  document feature
--  query-doc feature
--  statitics features based on previous features
+
+* query feature
+* document feature
+* query-doc feature
+* statitics features based on previous features
 
 ## 算法
 
@@ -118,5 +115,5 @@ McRank将排序问题转为多分类预测相关度level。
 
 #### 常用的pairwise和listwise算法
 
-
+比较常用的做法是pairwise或者listwise，在实验中证明效果好于pointwise算法。
 
