@@ -125,7 +125,7 @@ RankNet 输入 一对（query, doc）,使用NN打分，之后做softmax归一化
 ![](/assets/crossentropy.png)
 由此，我们可以使用SGD对打分用的NN做优化。
 ##### LambdaRank
-
+LambdaRank的发展源于对RankNet的Loss function的定性研究。
 
 ##### Mart
 
