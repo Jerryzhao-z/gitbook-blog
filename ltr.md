@@ -127,7 +127,8 @@ RankNet 输入 一对（query, doc）,使用NN打分，之后做softmax归一化
 ##### LambdaRank
 LambdaRank的发展源于对RankNet的Loss function的分析。设$$S_{ij}=[0,1,-1]$$表示doc(i)和doc(j)相关度相同，i大于j，j大于i三种情况。这三种情况带入Loss function可以将简化为
 ![](/assets/simplifiedCrossEntropy.png)
-
+分析这个函数，可以画出一下曲线，横轴是$$s_i - s_j$$
+![](/assets/lambda.png)
 
 ##### Mart
 
