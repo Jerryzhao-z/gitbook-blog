@@ -118,19 +118,33 @@ McRank将排序问题转为多分类预测相关度level。
 比较常用的做法是pairwise或者listwise，在实验中证明效果好于pointwise算法。其中比较常用的是LambdaMart算法。这一算法源于RankNet, 之后演化为LambdaRank, 最终结合Mart提出了这一广泛应用的算法。
 
 ##### RankNet
-RankNet是个存粹的Pairwise算法，RankNet这个名字，源于使用NeuralNet打分S。
-RankNet 输入 一对（query, doc）,使用NN打分，之后做softmax归一化获得这一对（query, doc）某一doc排名比另一个排名靠前的概率
-![](/assets/softmax.jpg)
-最后结合标注结果使用CrossEntropy计算Loss
-![](/assets/crossentropy.png)
-由此，我们可以使用SGD对打分用的NN做优化。
-##### LambdaRank
-LambdaRank的发展源于对RankNet的Loss function的分析。设$$S_{ij}=[0,1,-1]$$表示doc(i)和doc(j)相关度相同，i大于j，j大于i三种情况。这三种情况带入Loss function可以将简化为
-![](/assets/simplifiedCrossEntropy.png)
-分析这个函数，可以画出一下曲线，横轴是$$s_i - s_j$$, 竖轴是Cost。可见，当i文档度高于j文档时，$$s_i - s_j$$越大，也就是与标注一致，Cost越接近0，越小，Cost越接近线性
-![](/assets/lambda.png)
 
+RankNet是个存粹的Pairwise算法，RankNet这个名字，源于使用NeuralNet打分S。  
+RankNet 输入 一对（query, doc）,使用NN打分，之后做softmax归一化获得这一对（query, doc）某一doc排名比另一个排名靠前的概率  
+![](/assets/softmax.jpg)  
+最后结合标注结果使用CrossEntropy计算Loss  
+![](/assets/crossentropy.png)  
+由此，我们可以使用SGD对打分用的NN做优化。
+
+##### LambdaRank
+
+LambdaRank的发展源于对RankNet的Loss function的分析。设$$S_{ij}=[0,1,-1]$$表示doc\(i\)和doc\(j\)相关度相同，i大于j，j大于i三种情况。这三种情况带入Loss function可以将简化为  
+![](/assets/simplifiedCrossEntropy.png)  
+分析这个函数，可以画出一下曲线，横轴是$$s_i - s_j$$, 竖轴是Cost。可见，当i文档度高于j文档时，$$s_i - s_j$$越大，也就是与标注一致，Cost越接近0，越小，Cost越接近线性  
+![](/assets/lambda.png)
+由此，我们在做梯度下降时，可以展开为  
+![](/assets/SGD.png)  
+其中  
+![](/assets/costDerivative.png)
+全面展开后格式为  
+![](/assets/costExtends.png)
+
+这样的一个定义，我们假设参数$$\sigma=1$$, 
+$$S_{ij}=-1$$时，$${\lambda}_{ij} = 1- 1/（1+exp(s_i-s_j))$$, 
+$$S_{ij}=1$$时，$${\lambda}_{ij} = 1/（1+exp(s_i-s_j))$$,
 ##### Mart
 
-
 ##### LambdaMart
+
+
+
