@@ -149,6 +149,9 @@ $$S_{ij}=1$$时，$${\lambda}_{ij} = -1/(1+exp(s_i-s_j))$$,
 
 这里 $$(i,j)$$表示标注数据为i比j文档更相关。
 
+![](/assets/costGradient.png)
+
+$$\lambda_i$$ 如我们所见是一个负数，决定了doc(i)在迭代中的移动方向幅度
 ##### Mart
 
 ##### LambdaMart
