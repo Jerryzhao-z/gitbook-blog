@@ -140,8 +140,12 @@ LambdaRank的发展源于对RankNet的Loss function的分析。设$$S_{ij}=[0,1,
 ![](/assets/costExtends.png)
 
 这样的一个定义，我们假设参数$$\sigma=1$$, 
-$$S_{ij}=-1$$时，$${\lambda}_{ij} = 1- 1/（1+exp(s_i-s_j))$$, 
-$$S_{ij}=1$$时，$${\lambda}_{ij} = 1/（1+exp(s_i-s_j))$$,
+$$S_{ij}=-1$$时，$${\lambda}_{ij} = 1- 1/(1+exp(s_i-s_j))$$, 
+$$S_{ij}=1$$时，$${\lambda}_{ij} = 1/(1+exp(s_i-s_j))$$,
+![](/assets/lambdaij.png)
+
+
+
 ##### Mart
 
 ##### LambdaMart
