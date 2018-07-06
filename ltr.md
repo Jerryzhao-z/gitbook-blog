@@ -118,7 +118,10 @@ McRank将排序问题转为多分类预测相关度level。
 比较常用的做法是pairwise或者listwise，在实验中证明效果好于pointwise算法。其中比较常用的是LambdaMart算法。这一算法源于RankNet, 之后演化为LambdaRank, 最终结合Mart提出了这一广泛应用的算法。
 
 ##### RankNet
-RankNet是个存粹的Pairwise算法，RankNet这个名字，源于使用NeuralNet打分。
+RankNet是个存粹的Pairwise算法，RankNet这个名字，源于使用NeuralNet打分S。
+RankNet 输入 一对（query, doc）
+
+
 
 ##### LambdaRank
 
