@@ -191,6 +191,7 @@ For M轮迭代：
 pseudo-residuals(Grediant)什么可以代表residual(Y-F(x))呢？这是因为Gradient Boost使用 平方损失函数 $$L(y, F(\boldsymbol{x})) = \frac{1}{2} (y -F(\boldsymbol{x}))^2$$ 计算Loss，在这个前提下，可以获得Residual等于Pseudo-residuals
 $$\frac{\partial J}{\partial F(\boldsymbol{x}_i)} = \frac{\partial \sum_{i=1}^N L(y_i, F(\boldsymbol{x}_i))}{\partial F(\boldsymbol{x}_i)} = \frac{\partial L(y_i, F(\boldsymbol{x}_i))}{\partial F(\boldsymbol{x}_i)} = F(\boldsymbol{x}_i) - y_i$$
 
+----------------------------
 
 以上是Gradient Boost算法，当与Regression Tree结合时，就是GBRT了。
 GBRT的H(x,a)就是一个decision tree. 一颗有$$J_m$$个叶节点的Decision Tree可以根据特征把空间分成$$J_m$$个相互之间不相交的子空间$$R_{1,m}, R_{2,m}... R_{m,m}$$,每一个空间会有一个预测值$$b_{?,m}$$
@@ -213,3 +214,5 @@ Jerome Harold Friedman就提出我们其实这里可以不用分别去计算步�
 结合Mart和LambdaRank发现，LamdbaRank可以为Mart提供梯度，构建出如下算法
 
 ![](/assets/LambdaMART.png)
+
+这里$$\lambda$$根据我们之前的分析，就是这里的Gradient，也就是我们的pseudo-residuals.
