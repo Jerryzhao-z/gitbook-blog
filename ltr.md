@@ -154,7 +154,7 @@ $$S_{ij}=1$$时，$${\lambda}_{ij} = -1/(1+exp(s_i-s_j))$$,
 $$\lambda_i$$ 如我们所见是一个负数，决定了doc(i)在迭代中的移动方向和幅度。如果完美排序后，排在doc(i)之前的doc越少，之后的越多，那么文档doc(i)向前移动的幅度越大，$$|\lambda|$$越大
 
 LambdaRank的创新点在把评价测度引入Loss计算，变成了一个Listwise算法。
-我们考虑标注数据只包含类似(i,j)的情况（(j,i)交换一下可以转换过来）），可定义$$\lambda_{ij}$$
+我们考虑标注数据只考虑类似(i,j)的情况（(j,i)交换一下可以转换过来）），可定义$$\lambda_{ij}$$
 
 $$\lambda_{ij}\mathrel{\stackrel{\mbox{def}}{=}} - \frac{\sigma}{1 + \exp\bigl(\sigma\cdot(s_i - s_j)\bigr)}\cdot\lvert\Delta Z_{ij}\rvert.$$
 
