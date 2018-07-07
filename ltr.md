@@ -165,7 +165,7 @@ Mart，又称为GBRT, Gradient Boost Decision Tree. Boost是一种典型的ensem
 ```
 L: loss
 Y, X: output, input
-F: 预测function
+F: 预测function，即累加得到的预测函数
 H(x,a): 以a为parameter的函数
 
 初始化：选取满足argmin条件的constant 𝜌 初始化函数F
