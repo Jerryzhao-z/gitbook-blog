@@ -200,14 +200,6 @@ GBRT的H(x,a)就是一个decision tree. 一颗有$$J_m$$个叶节点的Decision 
 ![](/assets/lineSearch.svg)
 Jerome Harold Friedman就提出我们其实这里可以不用分别去计算步长和预测值，我们可以直接去找每一个子空间步长与预测值的乘积
 ![](/assets/treeBoost.svg)
-##### Mart for two class classification
-
-便于回顾Mart，我们跟随 _From RankNet to LambdaRank to LambdaMART: An Overview_ 一起针对二分类问题使用Mart。
-
-定义$$P_{+}=P(y=1|x), P_{-}=P(y=-1|x)$$模型给出的条件概率，$$I_{+}(x_i)=1 如果y_i=1，否则为0, I_{-}(x_i)=1表示y_i=-1,否则为0$$，由此写出cross entropy loss
-
-![](/assets/crossentropyMart.png)
-
 
 ##### LambdaMart
 
