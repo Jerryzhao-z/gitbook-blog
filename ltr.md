@@ -181,19 +181,25 @@ H(x,a): 以a为parameter的函数，每次迭代学到的弱learner
 
 初始化：选取满足argmin条件的constant 𝜌 初始化函数F
 For M轮迭代：
-	对loss函数做偏导，对于每个数据，带入x计算相应的偏移y’
-	学习一棵拟合y’的树，即一个regression function. 
-	line search获得步长/学习率
+	对loss函数做偏导，对于每个数据，带入x计算相应的偏移y’ pseudo-residuals
+	学习一棵拟合y’的函数，即一个regression function. 
+	line search获得步长/学习率 
 	更新模型，旧F与相应增量相加获得新的F
 ```
 
+
+
 ##### Mart for two class classification
 
-便于回顾Mart，我们跟随 _From RankNet to LambdaRank to LambdaMART: An Overview_ 一起针对二分类问题使用Mart
+便于回顾Mart，我们跟随 _From RankNet to LambdaRank to LambdaMART: An Overview_ 一起针对二分类问题使用Mart。
 
+定义$$P_{+}=P(y=1|x), P_{-}=P(y=-1|x)$$模型给出的条件概率，$$I_{+}(x_i)=1 如果y_i=1，否则为0, I_{-}(x_i)=1表示y_i=-1,否则为0$$，由此写出cross entropy loss
+
+![](/assets/crossentropyMart.png)
 
 
 ##### LambdaMart
 
 结合Mart和LambdaRank发现，LamdbaRank可以为Mart提供梯度，构建出如下算法
 
+![](/assets/LambdaMART.png)
