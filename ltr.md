@@ -185,7 +185,12 @@ For M轮迭代：
 	学习一棵拟合y’的函数，即一个regression function. 
 	line search获得步长/学习率 
 	更新模型，旧F与相应增量相加获得新的F
+	
+
 ```
+pseudo-residuals(Grediant)什么可以代表residual(Y-F(x))呢？这是因为Gradient Boost使用 平方损失函数 $$L(y, F(\boldsymbol{x})) = \frac{1}{2} (y -F(\boldsymbol{x}))^2$$ 计算Loss，在这个前提下，可以获得Residual等于Pseudo-residuals
+$$\frac{\partial J}{\partial F(\boldsymbol{x}_i)} = \frac{\partial \sum_{i=1}^N L(y_i, F(\boldsymbol{x}_i))}{\partial F(\boldsymbol{x}_i)} = \frac{\partial L(y_i, F(\boldsymbol{x}_i))}{\partial F(\boldsymbol{x}_i)} = F(\boldsymbol{x}_i) - y_i$$
+
 
 以上是Gradient Boost算法，当与Regression Tree结合时，就是GBRT了。
 GBRT的H(x,a)就是一个decision tree. 一颗有$$J_m$$个叶节点的Decision Tree可以根据特征把空间分成$$J_m$$个相互之间不相交的子空间$$R_{1,m}, R_{2,m}... R_{m,m}$$,每一个空间会有一个预测值$$b_{?,m}$$
