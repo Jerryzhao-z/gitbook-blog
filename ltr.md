@@ -191,6 +191,10 @@ For M轮迭代：
 pseudo-residuals(Grediant)什么可以代表residual(Y-F(x))呢？这是因为Gradient Boost使用 平方损失函数 $$L(y, F(\boldsymbol{x})) = \frac{1}{2} (y -F(\boldsymbol{x}))^2$$ 计算Loss，在这个前提下，可以获得Residual等于Pseudo-residuals
 $$\frac{\partial J}{\partial F(\boldsymbol{x}_i)} = \frac{\partial \sum_{i=1}^N L(y_i, F(\boldsymbol{x}_i))}{\partial F(\boldsymbol{x}_i)} = \frac{\partial L(y_i, F(\boldsymbol{x}_i))}{\partial F(\boldsymbol{x}_i)} = F(\boldsymbol{x}_i) - y_i$$
 
+然而并不是对于所有loss，这个等式都成立，之所以最终使用pseudo-residuals而不是residuals，是因为负梯度pseudo-residuals可以减少异常点（outliers）的影响
+
+**Reference：http://aandds.com/blog/ensemble-gbdt.html#org5c644ea**
+
 ----------------------------
 
 以上是Gradient Boost算法，当与Regression Tree结合时，就是GBRT了。
