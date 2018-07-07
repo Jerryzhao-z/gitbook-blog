@@ -187,6 +187,8 @@ For M轮迭代：
 	更新模型，旧F与相应增量相加获得新的F
 ```
 
+以上是Gradient Boost算法，当与Regression Tree结合时，就是GBRT了。
+GBRT的H(x,a)就是一个decision tree. 一颗有$$J_m$$个叶节点的Decision Tree可以根据特征把空间分成$$J_m$$个相互之间不相交的子空间$$R_{1,m}, R_{2,m}... R_{m,m}$$
 
 
 ##### Mart for two class classification
