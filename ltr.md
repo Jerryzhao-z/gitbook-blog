@@ -162,7 +162,7 @@ Mart，又称为GBRT, Gradient Boost Decision Tree. Boost是一种典型的ensem
 原始的Boost是用来分类的，通过放大被错误分类的sample的权重，组合多个模型，通过加权或投票获得结果。 GBDT的树是回归树，不是分类树，Learner拟合残差，最终输出结果是各个树估算结果的累加。
 
 ![](/assets/gradientBoost.png)
-
+```
 L: loss
 Y, X: output, input
 F: 预测function
@@ -170,12 +170,11 @@ H(x,a): 以a为parameter的函数
 
 初始化：选取满足argmin条件的constant 𝜌 初始化函数
 For M轮：
-
 	对loss函数做偏导，对于每个数据，带入x计算相应的偏移y’
 	学习一棵拟合y’的树，即一个regression function. 
 	line search获得步长/学习率
 	更新模型，旧F与相应增量相加获得新的F
-
+```
 
 ##### LambdaMart
 
