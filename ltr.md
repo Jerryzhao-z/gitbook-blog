@@ -181,6 +181,6 @@ For M轮迭代：
 ```
 
 ##### LambdaMart
-LambdaMart的创新点在把评价测度引入Loss计算，变成了一个Listwise
+LambdaMart的创新点在把评价测度引入Loss计算，变成了一个Listwise算法。
 
 
