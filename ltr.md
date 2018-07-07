@@ -187,6 +187,11 @@ For M轮迭代：
 	更新模型，旧F与相应增量相加获得新的F
 ```
 
+##### Mart for two class classification
+
+便于回顾Mart，我们跟随 _From RankNet to LambdaRank to LambdaMART: An Overview_ 一起针对二分类问题使用Mart
+
 ##### LambdaMart
 
+结合Mart和LambdaRank发现，LamdbaRank可以为Mart提供梯度，构建出如下算法
 
