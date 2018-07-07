@@ -188,9 +188,12 @@ For M轮迭代：
 ```
 
 以上是Gradient Boost算法，当与Regression Tree结合时，就是GBRT了。
-GBRT的H(x,a)就是一个decision tree. 一颗有$$J_m$$个叶节点的Decision Tree可以根据特征把空间分成$$J_m$$个相互之间不相交的子空间$$R_{1,m}, R_{2,m}... R_{m,m}$$
-
-
+GBRT的H(x,a)就是一个decision tree. 一颗有$$J_m$$个叶节点的Decision Tree可以根据特征把空间分成$$J_m$$个相互之间不相交的子空间$$R_{1,m}, R_{2,m}... R_{m,m}$$,每一个空间会有一个预测值$$b_{?,m}$$
+![](/assets/decisionTree.svg)
+一般根据Gradient Boost, 我们可以通过line-search去找到一个步长$$\lambda_m$$
+![](/assets/lineSearch.svg)
+Jerome Harold Friedman就提出我们其实这里可以不用分别去计算步长和预测值，我们可以直接去找每一个子空间步长与预测值的乘积
+![](/assets/treeBoost.svg)
 ##### Mart for two class classification
 
 便于回顾Mart，我们跟随 _From RankNet to LambdaRank to LambdaMART: An Overview_ 一起针对二分类问题使用Mart。
