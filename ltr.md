@@ -158,7 +158,7 @@ LambdaRank的创新点在把评价测度引入Loss计算，变成了一个Listwi
 
 $$\lambda_{ij}\mathrel{\stackrel{\mbox{def}}{=}} - \frac{\sigma}{1 + \exp\bigl(\sigma\cdot(s_i - s_j)\bigr)}\cdot\lvert\Delta Z_{ij}\rvert.$$
 
-其中$$\Delta Z_{ij}$$表示
+其中$$\Delta Z_{ij}$$表示交换doc(i)和doc(j)获得的评价测度收益。
 
 由此，对模型更新不再是优化cost function，而是通过迭代$$\lambda_i$$和NN,最终使用某一评测标准做早停。
 
