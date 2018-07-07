@@ -157,7 +157,7 @@ $$\lambda_i$$ 如我们所见是一个负数，决定了doc(i)在迭代中的移
 
 ##### Mart
 
-Mart，又称为GBRT, Gradient Boost Decision Tree. Boost是一种典型的ensembling方法，ensembling即通过学习多个learner，共同构造一个强learner，Boost是一种串行学习的一种算法，每次个learner的学习目标都是改建之前leaner的结果。
+Mart，Multiple Additive Regression Tree又称为GBRT, Gradient Boost Decision Tree. Boost是一种典型的ensembling方法，ensembling即通过学习多个learner，共同构造一个强learner，Boost是一种串行学习的一种算法，每次个learner的学习目标都是改建之前leaner的结果。
 
 原始的Boost是用来分类的，通过放大被错误分类的sample的权重，组合多个模型，通过加权或投票获得结果。 GBDT的树是回归树，不是分类树，Learner拟合残差，最终输出结果是各个树估算结果的累加。
 
