@@ -1,4 +1,10 @@
 # MySQL 常用指令
+### 通过IP Port和网络协议访问
+
+```bash
+mysql -uroot -p123456 --host=127.0.0.1 --port=3306 --protocol=TCP
+```
+
 ### dump
 
 ```bash
