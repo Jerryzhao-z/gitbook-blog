@@ -8,9 +8,12 @@
         - TriplePattern
     -    RdfSubject
         -    RdfResource
-
--    RdfObject, Operand
-    -    RdfValue
-        -    RdfResource
-
+    -    RdfPredicate
+    -    RdfObject
+        -    RdfValue
+            -    RdfResource
+    -    Operand
+        - RdfValue
+            - RdfResource
+    
         
