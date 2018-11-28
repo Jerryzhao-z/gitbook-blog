@@ -13,6 +13,4 @@
 -    RdfValue
     -    RdfResource
 
--    RdfSubject
-    -    RdfResource
         
