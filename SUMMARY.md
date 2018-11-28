@@ -10,4 +10,5 @@
 * [MySQL手记](mysqlshou-ji.md)
 * [LTR](ltr.md)
 * [XGBoost](xgboost.md)
+* [SparqlBuilder](sparqlbuilder.md)
 
