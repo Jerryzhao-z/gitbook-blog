@@ -6,6 +6,7 @@
 -    QueryElement
     -    GraphPattern
         - TriplePattern
+    -    GraphName
     -    RdfSubject
         -    RdfResource
     -    RdfPredicate
@@ -15,5 +16,7 @@
     -    Operand
         - RdfValue
             - RdfResource
+    -    SparqlOperator
+    
     
         
