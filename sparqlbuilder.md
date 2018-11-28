@@ -9,8 +9,8 @@
     -    RdfSubject
         -    RdfResource
 
-        
--    RdfValue
-    -    RdfResource
+-    RdfObject, Operand
+    -    RdfValue
+        -    RdfResource
 
         
